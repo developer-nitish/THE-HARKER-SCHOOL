@@ -5,11 +5,11 @@ import {
   Phone,
   Mail,
   Clock,
-  Facebook,
-  Instagram,
-  Youtube,
-  Linkedin,
-  Twitter,
+  Globe,
+  Camera,
+  PlayCircle,
+  Briefcase,
+  Share2,
   MessageCircle,
   ShieldAlert,
   FileWarning,
@@ -40,27 +40,27 @@ const SOCIAL_LINKS = [
   {
     name: "Facebook",
     href: "https://facebook.com",
-    icon: <Facebook size={18} />,
+    icon: <Globe size={18} />,
   },
   {
     name: "Instagram",
     href: "https://instagram.com",
-    icon: <Instagram size={18} />,
+    icon: <Camera size={18} />,
   },
   {
     name: "YouTube",
     href: "https://youtube.com",
-    icon: <Youtube size={18} />,
+    icon: <PlayCircle size={18} />,
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com",
-    icon: <Linkedin size={18} />,
+    icon: <Briefcase size={18} />,
   },
   {
     name: "X (Twitter)",
     href: "https://x.com",
-    icon: <Twitter size={18} />,
+    icon: <Share2 size={18} />,
   },
   {
     name: "WhatsApp Helpdesk",
@@ -129,7 +129,8 @@ const Footer = () => {
                   style={{
                     width: "46px",
                     height: "46px",
-                    background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                    background:
+                      "linear-gradient(135deg, #059669 0%, #047857 100%)",
                   }}
                 >
                   <GraduationCap size={25} color="#ffffff" />
@@ -153,15 +154,15 @@ const Footer = () => {
               {/* Contact Info */}
               <ul className="list-unstyled d-flex flex-column gap-2 small mb-4">
                 <li className="d-flex align-items-start gap-2">
-                  <MapPin size={16} className="text-warning flex-shrink-0 mt-1" />
+                  <MapPin
+                    size={16}
+                    className="text-warning flex-shrink-0 mt-1"
+                  />
                   <span>500 Saratoga Ave, San Jose, CA 95129 (Main Campus)</span>
                 </li>
                 <li className="d-flex align-items-center gap-2">
                   <Phone size={16} className="text-warning flex-shrink-0" />
-                  <a
-                    href="tel:+14085550192"
-                    className="harker-footer-link"
-                  >
+                  <a href="tel:+14085550192" className="harker-footer-link">
                     +1 (408) 555-0192
                   </a>
                 </li>
@@ -238,7 +239,10 @@ const Footer = () => {
               {/* Complaints & Grievance Redressal Card */}
               <div className="harker-complaint-card mt-4">
                 <div className="d-flex align-items-center gap-2 mb-2">
-                  <ShieldAlert size={20} className="text-warning flex-shrink-0" />
+                  <ShieldAlert
+                    size={20}
+                    className="text-warning flex-shrink-0"
+                  />
                   <h5 className="h6 fw-bold text-white mb-0">
                     Grievance &amp; Complaints Desk
                   </h5>
@@ -330,12 +334,16 @@ const Footer = () => {
               <div
                 className="modal-header text-white px-4 py-3"
                 style={{
-                  background: "linear-gradient(90deg, #064e3b 0%, #065f46 100%)",
+                  background:
+                    "linear-gradient(90deg, #064e3b 0%, #065f46 100%)",
                 }}
               >
                 <div className="d-flex align-items-center gap-2">
                   <ShieldAlert size={20} className="text-warning" />
-                  <h5 className="modal-title fw-bold mb-0" id="complaintModalTitle">
+                  <h5
+                    className="modal-title fw-bold mb-0"
+                    id="complaintModalTitle"
+                  >
                     School Grievance &amp; Complaint Portal
                   </h5>
                 </div>
@@ -364,8 +372,8 @@ const Footer = () => {
                       Ticket ID: {submittedTicket.id}
                     </div>
                     <p className="small text-muted mt-2 mb-4">
-                      Category: <strong>{submittedTicket.category}</strong> • Wing:{" "}
-                      <strong>{submittedTicket.wing}</strong>
+                      Category: <strong>{submittedTicket.category}</strong> •
+                      Wing: <strong>{submittedTicket.wing}</strong>
                     </p>
                     <div className="d-flex justify-content-center gap-2">
                       <button
@@ -412,10 +420,14 @@ const Footer = () => {
                           value={complaintForm.role}
                           onChange={handleFieldChange}
                         >
-                          <option value="Parent / Guardian">Parent / Guardian</option>
+                          <option value="Parent / Guardian">
+                            Parent / Guardian
+                          </option>
                           <option value="Student">Student</option>
                           <option value="Faculty / Staff">Faculty / Staff</option>
-                          <option value="Visitor / Vendor">Visitor / Vendor</option>
+                          <option value="Visitor / Vendor">
+                            Visitor / Vendor
+                          </option>
                         </select>
                       </div>
 
@@ -429,9 +441,15 @@ const Footer = () => {
                           value={complaintForm.wing}
                           onChange={handleFieldChange}
                         >
-                          <option value="Junior Wing (K–5)">Junior Wing (K–5)</option>
-                          <option value="Middle School (6–8)">Middle School (6–8)</option>
-                          <option value="Senior Wing (9–12)">Senior Wing (9–12)</option>
+                          <option value="Junior Wing (K–5)">
+                            Junior Wing (K–5)
+                          </option>
+                          <option value="Middle School (6–8)">
+                            Middle School (6–8)
+                          </option>
+                          <option value="Senior Wing (9–12)">
+                            Senior Wing (9–12)
+                          </option>
                           <option value="Campus / Administration">
                             Campus / Administration
                           </option>
@@ -448,7 +466,9 @@ const Footer = () => {
                           value={complaintForm.category}
                           onChange={handleFieldChange}
                         >
-                          <option value="Academic / Teaching">Academic / Teaching</option>
+                          <option value="Academic / Teaching">
+                            Academic / Teaching
+                          </option>
                           <option value="School Bus & Transport">
                             School Bus &amp; Transport
                           </option>
@@ -469,7 +489,8 @@ const Footer = () => {
 
                       <div className="col-12">
                         <label className="form-label small fw-semibold">
-                          Phone or Email for Update {!complaintForm.anonymous && "*"}
+                          Phone or Email for Update{" "}
+                          {!complaintForm.anonymous && "*"}
                         </label>
                         <input
                           type="text"

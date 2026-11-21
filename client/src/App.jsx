@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./components/common/Navbar";
 import Home from "./pages/Home";
-import Footer from "./components/common/Footer";
+// import Footer from "./components/common/Footer";
+import Footer from "./components/common/Footer.jsx";
 
 function App() {
   return (
