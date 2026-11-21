@@ -13,9 +13,10 @@ const NAV_LINKS = [
   { name: "Home", href: "#home", id: "home" },
   { name: "About", href: "#about", id: "about" },
   { name: "Academics", href: "#academics", id: "academics" },
+  { name: "Wings", href: "#wings", id: "wings" },
   { name: "Admissions", href: "#admissions", id: "admissions" },
   { name: "Campus Life", href: "#campus-life", id: "campus-life" },
-  { name: "Contact", href: "#contact", id: "contact" },
+  { name: "Contact", href: "#contact-page", id: "contact-page" },
 ];
 
 const Navbar = () => {

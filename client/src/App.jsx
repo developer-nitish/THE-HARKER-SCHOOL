@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./components/common/Navbar";
 import Home from "./pages/Home";
-// import Footer from "./components/common/Footer";
-import Footer from "./components/common/Footer.jsx";
+import ContactSection from "./components/home/ContactSection";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <div className="flex-grow-1">
         <Home />
+        <ContactSection />
       </div>
       <Footer />
     </div>

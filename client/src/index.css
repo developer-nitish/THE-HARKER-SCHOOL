@@ -557,3 +557,55 @@ body {
   font-size: 0.84rem;
   color: #94a3b8;
 }
+
+
+/* =========================================
+   THE HARKER SCHOOL - CONTACT SECTION UI
+   ========================================= */
+
+.harker-contact-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.harker-contact-banner {
+  background: linear-gradient(115deg, #032e23 0%, #065f46 60%, #047857 100%);
+  border-radius: 20px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(6, 78, 59, 0.16);
+}
+
+.harker-dept-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.35rem;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.harker-dept-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(6, 78, 59, 0.1);
+  border-color: rgba(6, 95, 70, 0.3);
+}
+
+.harker-contact-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
+}
+
+.harker-faq-btn:not(.collapsed) {
+  background-color: #ecfdf5 !important;
+  color: #064e3b !important;
+  font-weight: 600;
+  box-shadow: none !important;
+}
+
+.harker-faq-btn:focus {
+  box-shadow: 0 0 0 3px rgba(6, 95, 70, 0.14) !important;
+}
