@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "./components/common/Navbar";
 import Home from "./pages/Home";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <Home />
+      <div className="flex-grow-1">
+        <Home />
+      </div>
+      <Footer />
     </div>
   );
 }
